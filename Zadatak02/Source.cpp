@@ -134,7 +134,7 @@ int main()
     M[5][16] = '#';
     M[6][16] = '#';
 
-    cout << "Najbrza putanja do cilja iznosi: " << minDistance(M, rowA, collumA, rowB, collumB) << endl;
+    cout << "Putanja do odredista: " << minDistance(M, rowA, collumA, rowB, collumB) << endl;
     iscrtaj(M);
 
     return 0;
