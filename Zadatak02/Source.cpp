@@ -8,7 +8,7 @@ using namespace std;
 int dRow[] = { -1, 0, 1, 0 };
 int dCol[] = { 0, 1, 0, -1 };
 
-void display2DMatrix(char M[][COLLUM])
+void iscrtaj(char M[][COLLUM])
 {
     for (unsigned i = 0; i < ROW; i++)
     {
@@ -90,7 +90,7 @@ int minDistance(char M[ROW][COLLUM], int rowA, int collumA, int rowB, int collum
         }
         M[rowA - 1][collumA - 1] = 'A';
         M[rowB - 1][collumB - 1] = 'B';
-        display2DMatrix(M);
+        iscrtaj(M);
         system("cls");
     }
     return -1;
@@ -135,7 +135,7 @@ int main()
     M[6][16] = '#';
 
     cout << "Najbrza putanja do cilja iznosi: " << minDistance(M, rowA, collumA, rowB, collumB) << endl;
-    display2DMatrix(M);
+    iscrtaj(M);
 
     return 0;
 }
